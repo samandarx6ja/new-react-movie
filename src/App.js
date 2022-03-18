@@ -1,15 +1,24 @@
-import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
-function App(props) {
+import Navbar from './Component/Navbar'
 
-  const numbers = props.numbers;
-  const newNumber = numbers.map(num => <li key={num.toString()}>{num}</li>)
+import Homepage from './Page/Homepage'
+import Aboutpage from './Page/Aboutpage'
+import Singlepage from './Page/Singlepage'
 
+const App = () => {
   return (
-    <div className="App">
-      <ul>{newNumber}</ul>
-    </div>
+    <Router>
+      <Navbar />
+      <div className="container">
+        <Routes>
+          <Route exact path="/" element={<Homepage />} />
+          <Route exact path="/about-us" element={<Aboutpage />} />
+          <Route exact path="/signleshow/:id" element={<Singlepage />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
-export default App;
+export default App

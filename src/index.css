@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+/*# sourceMappingURL=index.css.map */

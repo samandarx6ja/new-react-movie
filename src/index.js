@@ -1,14 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import ClassApp from './Component/ClassApp';
-
-const numbers = [1,2,3,4,5,6]
+import App from './App'
+import './index.css'
 
 ReactDOM.render(
-    <App numbers={numbers}/>
+  <App />
   ,document.getElementById('root')
 );
-
 
 
