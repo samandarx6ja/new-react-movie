@@ -1,7 +1,11 @@
-import React from 'react'
+import SearchBar from "../Component/SearchBar"
 
-function Homepage() {
-  return <div>this is Homepage</div>
+const Homepage = () => {
+  return (
+    <div className='homepage'>
+      <SearchBar/>
+    </div>
+  )
 }
 
 export default Homepage
